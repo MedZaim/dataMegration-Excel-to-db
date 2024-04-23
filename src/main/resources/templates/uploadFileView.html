@@ -1,14 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Feed Database</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Internal CSS -->
+    <style>
+        /* Add any custom styles here */
+    </style>
 </head>
 <body>
 <h1>Upload File</h1>
-    <form method="POST" action="/product/upload" enctype="multipart/form-data">
-        <input type="file" name="file" />
-        <input type="submit" value="Upload" />
-    </form>
+<form method="POST" action="/product/upload" enctype="multipart/form-data">
+    Add Excel File :
+
+    <input type="file"  class="btn btn-outline-primary" name="file" />
+    <input class="btn btn-outline-primary" type="submit" value="Upload" />
+    <a href="/products">Products</a>
+</form>
 </body>
 </html>

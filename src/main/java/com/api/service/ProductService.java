@@ -19,12 +19,10 @@ public class ProductService {
             List<Product> products = Helper
                     .convertExcelToListOfProduct(file.getInputStream());
             this.productRepo.saveAll(products);
-
-
     }
 
     public List<Product> getAllProducts() {
-        return this.productRepo.findAll();
+        return productRepo.findAll();
     }
 
 
